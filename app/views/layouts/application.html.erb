@@ -19,10 +19,10 @@
 
      <nav>
        <ul>
-         <li>Home</li>
-         <li>About</li>
-         <li>Contact</li>
-         <li>Products</li>
+         <li><a href="#home_url">Home</li>
+         <li><a href="#about_url">About</li>
+         <li><a href="#contact_url">Contact</li>
+         <li><a href="#products_url">Products</li>
          <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
   <%= form.label :q, 'Search for:' %>
   <%= form.text_field :q, id: 'q', value: params[:q] %>
