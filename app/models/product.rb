@@ -3,9 +3,9 @@ class Product < ApplicationRecord
 
 def self.search(search_term)
   if search_term
-      find(:all, :conditions => ["style ILIKE ? OR construction ILIKE ?", "%#{search_term}%", "%#{search_term}%"])
+      find_by_id(:all, :conditions => ["style ILIKE ? OR construction ILIKE ?", "%#{search_term}%", "%#{search_term}%"])
     else
-      find(:all)
+      find_by_id(:all)
     end
   end
 end
