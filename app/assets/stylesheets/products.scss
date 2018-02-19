@@ -14,7 +14,7 @@ th {
 }
 
 
-nav ul {
+.navbar-collapse ul {
   position: fixed;
   top: 0;
   background-color: black;
@@ -23,7 +23,7 @@ nav ul {
   letter-spacing: 0.05em;
   }
 
-  nav ul li {
+  .navbar-collapse ul li {
     float: right;
     display: inline-block;
     font-size: 1em;

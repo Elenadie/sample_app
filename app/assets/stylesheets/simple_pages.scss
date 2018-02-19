@@ -18,7 +18,7 @@ p {
   padding-top: 60px;
 }
 
-nav ul {
+.navbar-collapse ul {
   position: fixed;
   top: 0;
   background-color: black;
@@ -28,7 +28,7 @@ nav ul {
 
   }
 
-  nav ul li {
+  .navbar-collapse ul li {
     float: right;
     display: inline-block;
     font-size: 1em;
@@ -36,7 +36,7 @@ nav ul {
     padding: 20px 10px;
 }
 
-nav ul li a { color: white;
+.navbar-collapse ul li a { color: white;
 }
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
