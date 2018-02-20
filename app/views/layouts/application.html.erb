@@ -16,16 +16,20 @@
     <%= csrf_meta_tags %>
  </head>
 <body>
-         <p class="notice"><%= notice %></p>
-         <p class="alert"><%= alert %></p>
-     <div class="navbar-collapse">
-       <ul>
+  <% if notice %>
+    <p id="notice" class="alert alert-info"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p id="alert" class="alert"><%= alert %></p>
+  <% end %>
+    <div class="navbar-collapse">
+      <ul>
          <li><%= link_to "Home", root_path %></li>
          <li><%= link_to "About", simple_pages_about_path %></li>
          <li><%= link_to "Contact", simple_pages_contact_path %></li>
-        <li><%= link_to "Products", products_path %></li>
+         <li><%= link_to "Products", products_path %></li>
 
-         <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+  <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
   <%= form.label :q, 'Search for:' %>
   <%= form.text_field :q, id: 'q', value: params[:q] %>
   <%= form.submit 'Search' %>
