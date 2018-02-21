@@ -1,3 +1,49 @@
+.container {
+  padding-right: 400px;
+  padding-left: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+body{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.form-signup {
+  max-width: 330px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.form-signin .form-control {
+  position:relative;
+  height:auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.form-signup .form-control {
+  position:relative;
+  height:auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.password-confirmation {
+  margin-top: 20px;
+}
+
+form {
+  display: block;
+}
+
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
