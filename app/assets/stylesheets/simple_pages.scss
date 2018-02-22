@@ -1,6 +1,6 @@
 
 
-.row-contact {
+.row {
     padding-right: 400px;
     padding-left: 400px;
     margin-right: auto;
@@ -28,16 +28,16 @@ p {
   padding-top: 60px;
 }
 
-.navbar-collapse .navbar-nav {
+.navbar {
   position: fixed;
   top: 0;
   background-color: black;
   color: white;
   width: 100%;
   letter-spacing: 0.05em;
-}
+  }
 
-.navbar-default ul li {
+.navbar ul li {
   float: right;
   display: inline-block;
   font-size: 1em;
