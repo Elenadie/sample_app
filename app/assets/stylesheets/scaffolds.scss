@@ -1,25 +1,25 @@
 
 
-p, ol, ul, td {
+ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-pre {
+ pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
 
-a {
+ a {
   color: #000;
 
   &:visited {
     color: #666;
   }
 
-  &:hover {
+&:hover {
     color: #fff;
     background-color: #000;
   }
@@ -34,7 +34,7 @@ td {
 }
 
 div {
-  &.field, &.actions {
+&.field, &.actions {
     margin-bottom: 10px;
   }
 }
@@ -66,7 +66,7 @@ div {
     color: #fff;
   }
 
-  ul li {
+ ul li {
     font-size: 12px;
     list-style: square;
   }
