@@ -22,16 +22,7 @@
         <strong>Color</strong><br>
           <%= @product.colour %>
       </p>
-      <p>
-        <%= f.label :body, "Comments" %><br>
-        <%= f.text_area :body %>
-     </p>
-     <p>
-     <div class="rating"></div>
-     </p>
-      <p class="submit">
-       <%= f.submit "Submit" %>
-     </p>
+      
     </div>
     <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
   </div>
