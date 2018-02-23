@@ -28,10 +28,6 @@
   <div class="container-fluid">
      <div class="collapse navbar-collapse color" id="bs-example-navbar-collapse-1">
        <ul>
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "About", simple_pages_about_path %></li>
-          <li><%= link_to "Contact", simple_pages_contact_path %></li>
-          <li><%= link_to "Products", products_path %></li>
           <li>
             <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
@@ -39,6 +35,12 @@
               <%= link_to('Login', new_user_session_path) %>
             <% end %>
           </li>
+          <li><%= link_to "Orders", orders_path %></li>
+         <li><%= link_to "Products", products_path %></li>
+         <li><%= link_to "Contact", simple_pages_contact_path %></li>
+         <li><%= link_to "About", simple_pages_about_path %></li>
+         <li><%= link_to "Home", root_path %></li>
+
         <form class="navbar-form navbar-left">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
