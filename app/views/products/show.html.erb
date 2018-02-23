@@ -30,6 +30,7 @@
 
   <% if @product.lowest_rating_comment %>
       <%= @product.lowest_rating_comment.body %>
+</div>
   <% end %>
 
   <%= render 'new_comment' %>
@@ -37,4 +38,4 @@
 
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', products_path %>
-</div><!-- end container-fluid -->
+<!-- end container-fluid -->

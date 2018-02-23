@@ -1,40 +1,29 @@
-
+<h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="container">
-    <form class="form-signup">
-      <h2 class="form-signup-heading">Please Sign up</h2>
-      <label for="Input-Email" class="sr-only">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email Adress" %>
-      </label>
-      <input type="Email" id="Input-Email" class="form-control" placeholder="Email Adress" required autofocus>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
 
-  <div class="password-confirmation">
-    <h6 class="password-confirmation">(6 characters minimum)</h6>
-     <label for="Input-Password" class="sr-only">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "off", placeholder: "Enter Password" %>
-     </label>
-    <input type="Password" id="Input-Password" class="form-control" placeholder="Password" required>
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
 
-    <label for="Input-Password-Confirmation" class="sr-only password-confirmation">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm Password"%>
-    </label>
-    <input type="Password-Confirmation" id="Input-Password-Confirmation" class="form-control" placeholder="Confirm Password" required>
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
 
-   </div>
-   <button class="btn btn-lg btn-primary btn-block">
-    Sign up
-   </button>
-  </form>
-</div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
