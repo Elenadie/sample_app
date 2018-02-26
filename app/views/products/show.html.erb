@@ -2,7 +2,8 @@
   <div class="col-md-6 col-xs-12">
     <div>
       <p>
-         <%= @product.image_url %>
+
+         <%= image_tag(@product.image_url, class: "img-responsive")%>
       </p>
     </div>
   </div>
@@ -29,13 +30,12 @@
 
   <% if @product.lowest_rating_comment %>
       <%= @product.lowest_rating_comment.body %>
-</div>
+
   <% end %>
 
     <%= render 'new_comment' %>
     <%= render 'comments' %>
-
-
+</div>
 
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', products_path %>
