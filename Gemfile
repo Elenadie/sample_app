@@ -40,11 +40,16 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.7'
+
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+
+  gem 'rspec-rails', '~> 3.7'
+
 end
 
 group :production do
@@ -54,6 +59,8 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+    gem 'rspec-rails', '~> 3.7'
+  
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
