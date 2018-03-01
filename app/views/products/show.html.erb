@@ -26,12 +26,10 @@
       <p>Average Rating: <div class="rated average-rating" data-score="<%= @product.average_rating %>"></div> </p>
   </div>
 </div>
-<p id="notice"><%= notice %></p>
 
-  <% if @product.lowest_rating_comment %>
+ <% if @product.lowest_rating_comment %>
       <%= @product.lowest_rating_comment.body %>
-
-  <% end %>
+ <% end %>
 
     <%= render 'new_comment' %>
     <%= render 'comments' %>

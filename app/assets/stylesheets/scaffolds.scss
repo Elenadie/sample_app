@@ -11,16 +11,20 @@ pre {
 }
 
 a {
- color: #000;
+ color: black;
 
-&:visited {
-   color: #666;
- }
+ &:visited {
+    color: black;
+  }
 
 &:hover {
-   color: #fff;
-   background-color: #000;
+   color: black;
+
  }
+}
+
+.navbar ul li a {
+  color: white;
 }
 
 th {
