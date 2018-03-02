@@ -36,20 +36,19 @@
             <% end %>
           </li>
           <li><%= link_to "Orders", orders_path %></li>
-         <li><%= link_to "Products", products_path %></li>
-         <li><%= link_to "Contact", simple_pages_contact_path %></li>
-         <li><%= link_to "About", simple_pages_about_path %></li>
-         <li><%= link_to "Home", root_path %></li>
-         <form class="navbar-form navbar-left">
-             <div class="form-group">
-         <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-           
-           <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-control', placeholder: 'Search' %>
-           <%= form.submit 'Search', class:'btn btn-default' %>
-         <% end %>
+          <li><%= link_to "Products", products_path %></li>
+          <li><%= link_to "Contact", simple_pages_contact_path %></li>
+          <li><%= link_to "About", simple_pages_about_path %></li>
+          <li><%= link_to "Home", root_path %></li>
+          <div class="navbar-form navbar-left">
+            <div class="form-group">
+               <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+               <%= form.text_field :q, id: 'q', value: params[:q], class: 'form-control', placeholder: 'Search' %>
+               <%= form.submit 'Search', class:'btn btn-default' %>
 
-
-        </form>
+             <% end %>
+           </div>
+        </div>
       </ul>
     </div>
   </div>
