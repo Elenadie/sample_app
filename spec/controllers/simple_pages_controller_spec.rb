@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+describe SimplePagesController, type: :controller do
 login_admin
 
 it "should have a current_user" do
@@ -16,7 +17,7 @@ it "should get index" do
 
 
 
-describe SimplePagesController, type: :controller do
+
   context 'GET #index' do
     it 'renders the index template' do
       get :index
@@ -24,6 +25,4 @@ describe SimplePagesController, type: :controller do
       expect(response).to render_template('index')
     end
   end
-
-
-  end
+end
