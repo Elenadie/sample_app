@@ -3,8 +3,7 @@ require 'rails_helper'
 describe Product do
   let (:product) { Product.create!(name: "Not that kind of girl")}
 
-
-  let (:user) { User.create! (email: "ramplachi@to.com", password: "whatever")}
+  let (:user) { User.create!(email:"ramplachi@to.com", password: "whatever")}
 
   before do
     product.comments.create!(rating: 1, user: user, body: "Dull book!")
