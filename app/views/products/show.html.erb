@@ -24,13 +24,15 @@
           <%= @product.colour %>
       </p>
       <p>Average Rating: <div class="rated average-rating" data-score="<%= @product.average_rating %>"></div> </p>
-
+      <p>
+      <%= form_with(url: '/payments/create') do |form| %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+    </p>
   </div>
 </div>
 
-<%= form_with(url: '/payments/create') do |form| %>
-<%= render partial: "shared/stripe_checkout_button" %>
-<% end %>
+
 
  <% if @product.lowest_rating_comment %>
       <%= @product.lowest_rating_comment.body %>
