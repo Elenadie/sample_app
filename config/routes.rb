@@ -5,26 +5,21 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
+  resources :orders, only: [:index, :show, :create, :destroy]
   resources :users
 
-  get 'simple_pages/about'
+  root 'simple_pages#index'
 
+  get 'simple_pages/about'
   get 'simple_pages/contact'
 
- root 'simple_pages#index'
-
- post 'simple_pages/thank_you'
+   post 'simple_pages/thank_you'
 
  post 'payments/create'
-
-
-
-  resources :orders, only: [:index, :show, :create, :destroy]
-
+end
 
 
 
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-end

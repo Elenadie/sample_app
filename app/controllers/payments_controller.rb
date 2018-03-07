@@ -11,16 +11,19 @@ class PaymentsController < ApplicationController
           currency: "eur",
           source: token,
           description: params[:stripeEmail]
-      )
+        )
+
       if charge.paid
          Order.create(
           product_id: @product.id,
           user_id: @user.id,
           total: @product.price
-      )
+        )
+
+          flash[:success] = "Your payment was processed successfully"
       end
 
-     flash[:success] = "Your payment was processed successfully"
+
 
      rescue Stripe::CardError => e
         body = e.json_body
