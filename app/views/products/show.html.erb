@@ -27,7 +27,7 @@
       <p>
       <%= form_tag "/payments/create" do %>
       <%= render "stripe_checkout_button" %>
-      <%= hidden_field_tag(:product_id, "@product.id" ) %>
+      <%= hidden_field_tag(:product_id, @product.id ) %>
       <% end %>
     </p>
   </div>
