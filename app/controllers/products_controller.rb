@@ -3,14 +3,19 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+logger.debug "showing products over an index action #{}"
 def index
   if params[:q]
+    logger.debug "showing a search #{}"
     search_term = params[:q]
     @products = Product.search(search_term)
+    logger.debug "item returned when a search is completed #{}"
   else
+    logger.debug "showing all products from indez view #{}"
     @products = Product.all
   end
 end
+logger.debug "done with the action!"
 
 
   # GET /products/1
