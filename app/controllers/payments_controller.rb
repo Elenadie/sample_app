@@ -20,7 +20,7 @@ class PaymentsController < ApplicationController
           total: @product.price
         )
 
-          flash[:success] = "Your payment was processed successfully"
+          flash[:notice] = "Your payment was processed successfully"
       end
 
 
