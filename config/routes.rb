@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show, :create, :destroy]
   resources :users
 
-  root 'simple_pages#index'
+  root 'simple_pages#landing_page'
 
   get 'simple_pages/about'
   get 'simple_pages/contact'

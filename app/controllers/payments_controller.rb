@@ -1,7 +1,7 @@
 class PaymentsController < ApplicationController
 
   before_action :authenticate_user!
-#byebug
+
   def create
     @product = Product.find(params[:product_id])
     @user = current_user
@@ -26,7 +26,7 @@ class PaymentsController < ApplicationController
       end
 
 
-#byebug
+
      rescue Stripe::CardError => e
         body = e.json_body
         err = body[:error]
