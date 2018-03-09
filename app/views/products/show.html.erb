@@ -2,8 +2,7 @@
   <div class="col-md-6 col-xs-12">
     <div>
       <p>
-
-         <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: "@product.image_url")%>
+        <%= image_tag(@product.image_url, width: "350", class: "img-zoom", data_zoom_image: "@product.image_url")%>
       </p>
     </div>
   </div>
@@ -23,12 +22,12 @@
         <strong>Color</strong><br>
           <%= @product.colour %>
       </p>
-      <p>Average Rating: <div class="rated average-rating" data-score="<%= @product.average_rating %>"></div> </p>
+      <p><strong>Average Rating </strong> <div class="rated average-rating" id= "average-rating" data-score="<%= @product.average_rating %>"></div> </p>
       <p>
-        <%= form_tag "/payments/create" do %>
-    <%= render "shared/stripe_checkout_button" %>
-    <%= hidden_field_tag(:product_id, @product.id) %>
-  <% end %>
+         <%= form_tag "/payments/create" do %>
+         <%= render "shared/stripe_checkout_button" %>
+         <%= hidden_field_tag(:product_id, @product.id) %>
+        <% end %>
     </p>
   </div>
 </div>
@@ -43,9 +42,12 @@
     <%= render 'comments' %>
 
 </div>
-<p class="paginate"><%= will_paginate @comments %></p>
+<div class= "container-fluid footer">
 
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-  <%= link_to 'Back', products_path %>
-
+  <p><%= will_paginate @comments %></p>
+ <p>
+   <%= link_to 'Edit', edit_product_path(@product) %> |
+   <%= link_to 'Back', products_path %>
+</p>
+</div>
 <!-- end container-fluid -->

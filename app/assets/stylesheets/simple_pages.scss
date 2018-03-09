@@ -3,7 +3,7 @@ body {
 }
 
 .alert {
-  
+
    color: black;
 }
 
@@ -51,20 +51,19 @@ p {
   padding: 20px 10px;
 }
 
-
-.rated-rated {
-
-  padding-left: 600px;
-}
 .product-comment-box-heading {
   text-align: center;
 }
-.rating {
-  padding-left: 40px;
+
+.reviews {
+  clear: both;
+  width: 100%;
+}
+.rated-rated {
+  padding-left: 620px;
 }
 
 .pagination {
   padding-left: 600px;
-  padding-right: 600px;
-
+  padding-right: -600px;
 }
