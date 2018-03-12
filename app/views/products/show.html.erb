@@ -8,12 +8,14 @@
   </div>
   <div class="col-md-6 col-xs-12 product-description">
     <div class="product-info-box">
+<% cache @product do %>
       <p class="product-name">
         <strong><%= @product.name %></strong>
      </p>
       <p class="product-description">
         <%= @product.description %>
       </p>
+      <% end %>
       <p class="product-price">
         <strong>Price</strong>
         <strong><%= @product.price %>€</strong>
