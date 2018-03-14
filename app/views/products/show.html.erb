@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="col-md-6 col-xs-12 product-description">
-    <div class="product-info-box">
+    <div class="product-info-box" data-product-id="<%= @product.id %>">
 <% cache @product do %>
       <p class="product-name">
         <strong><%= @product.name %></strong>
