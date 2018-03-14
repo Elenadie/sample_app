@@ -1,0 +1,302 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 1, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/products.scss */
+h1 {
+  text-align: center;
+  color: black;
+  font-family: helvetica;
+  margin-top: 60px;
+}
+
+/* line 8, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/products.scss */
+th {
+  text-align: center;
+}
+
+/* line 12, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/products.scss */
+.header {
+  padding-top: 60px;
+}
+
+/* line 19, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/products.scss */
+.product-description p {
+  text-align: left;
+}
+
+/* line 24, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/products.scss */
+.img-responsive {
+  max-height: 300px;
+  margin: 40px;
+}
+
+/* line 30, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/products.scss */
+.item {
+  height: 550px;
+  padding-left: 550px;
+}
+/* line 1, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 7, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 13, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: black;
+}
+/* line 16, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: black;
+}
+/* line 20, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: black;
+}
+
+/* line 26, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+.navbar ul li a {
+  color: white;
+}
+
+/* line 30, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 34, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 39, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 44, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 48, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 54, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 61, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 71, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 77, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+body {
+  margin-top: 80px;
+}
+
+/* line 5, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.alert {
+  color: black;
+}
+
+/* line 10, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.contact-group {
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 16, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  margin-top: 80px;
+  text-align: center;
+  color: black;
+  font-family: helvetica;
+}
+
+/* line 23, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+p {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 29, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.header {
+  padding-top: 20px;
+}
+
+/* line 33, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.panel-default {
+  padding-top: 60px;
+}
+
+/* line 37, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  letter-spacing: 0.05em;
+}
+
+/* line 46, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.navbar ul li {
+  float: right;
+  display: inline-block;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 20px 10px;
+}
+
+/* line 54, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.product-comment-box-heading {
+  text-align: center;
+}
+
+/* line 58, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.reviews {
+  clear: both;
+  width: 100%;
+}
+
+/* line 62, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.rated-rated {
+  padding-left: 620px;
+}
+
+/* line 66, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/simple_pages.scss */
+.pagination {
+  padding-left: 600px;
+  padding-right: -600px;
+}
+/* line 1, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/users.scss */
+.container {
+  margin-top: 80px;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
+/* line 8, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/users.scss */
+.page-wrap {
+  margin-top: 80px;
+}
+
+/* line 14, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/users.scss */
+.form-signin, .form-signup {
+  max-width: 400px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+/* line 21, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/users.scss */
+.form-signin .form-signup .form-control {
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* line 30, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/users.scss */
+.password-confirmation {
+  margin-top: 20px;
+}
+
+/* line 34, /mnt/c/Users/elena/Desktop/sample_app/app/assets/stylesheets/users.scss */
+form {
+  display: block;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
