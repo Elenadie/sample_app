@@ -13,14 +13,23 @@ th {
   padding-top: 60px;
 }
 
-.carousel {
-   margin-top: 70px;
- }
+
 
 
 .product-description p {
   text-align: left;
 
+}
+
+.img-responsive {
+  max-height: 300px;
+
+  margin: 40px;
+}
+
+.item {
+  height: 550px;
+  padding-left: 550px;
 }
     // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
