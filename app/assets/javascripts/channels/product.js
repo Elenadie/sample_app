@@ -27,5 +27,6 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
 
 
 $(document).on('turbolinks:load', function() {
+  console.log("connecting")
   App.product.listen_to_comments();
 });
