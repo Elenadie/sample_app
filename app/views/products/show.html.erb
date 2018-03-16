@@ -41,16 +41,15 @@
  <% end %>
 
     <%= render 'new_comment' %>
-    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+    <div class="alert alert-info" style="display:none" role="alert"><p class="alert alert-comment">A new comment was posted!</p></div>
     <%= render 'comments' %>
 
 </div>
 <div class= "container-fluid footer">
-
   <p><%= will_paginate @comments %></p>
- <p>
-   <%= link_to 'Edit', edit_product_path(@product) %> |
-   <%= link_to 'Back', products_path %>
-</p>
+  <p>
+     <%= link_to 'Edit', edit_product_path(@product) %> |
+     <%= link_to 'Back', products_path %>
+  </p>
 </div>
 <!-- end container-fluid -->

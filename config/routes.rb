@@ -12,13 +12,14 @@ Rails.application.routes.draw do
 
   get 'simple_pages/about'
   get 'simple_pages/contact'
+  get 'simple_pages/index'
 
-   post 'simple_pages/thank_you'
+  post 'simple_pages/thank_you'
 
  post 'payments/create'
 
  mount ActionCable.server => '/cable'
- 
+
 end
 
 

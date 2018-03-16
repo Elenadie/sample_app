@@ -1,16 +1,18 @@
-<div class="col-md-6 col-xs-12">
-  <div class="row product-comment-box">
-    <% if signed_in? %>
-      <h4 class="product-comment-box-heading">Add a comment</h4>
-    <%= form_for([@product, @product.comments.build], remote:true) do |f| %>
-      <p>
-        <%= f.text_area :body, class:"form-control", placeholder: "Leave a comment here"%>
-      </p>
-      <div class="rating"></div>
-      <p>
-        <%= f.submit "Submit", class:"btn-lg btn-primary btn-block"%>
-      </p>
-     <% end %>
-   <% end %>
+<div class="row row-alert">
+   <div class="col-md-6 col-xs-12">
+
+       <% if signed_in? %>
+       <h4 class="product-comment-box-heading">Add a comment</h4>
+       <%= form_for([@product, @product.comments.build], remote:true) do |f| %>
+       <p>
+           <%= f.text_area :body, class:"form-control", placeholder: "Leave a comment here"%>
+       </p>
+       <div class="rating"></div>
+         <p>
+           <%= f.submit "Submit", class:"btn-lg btn-primary btn-block"%>
+         </p>
+      <% end %>
+    <% end %>
+   
   </div>
 </div>
